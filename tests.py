@@ -3,6 +3,7 @@ import sys
 from src import variablen
 from src import lists
 from src import schleifen
+from src import flusskontrolle
 
 class SetupTest(unittest.TestCase):
 	def testEnviroment(self):
@@ -55,6 +56,11 @@ class LoopTest(unittest.TestCase):
 
     def testVar1(self):
         assert schleifen.var1 == 32
+
+class FlussKontrollTest(unittest.TestCase):
+    def testVar1(self):
+        assert flusskontrolle.var1 == 2450
+        assert flusskontrolle.var2 == 2500
 
 if __name__ == "__main__":
 	unittest.main()

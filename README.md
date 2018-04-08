@@ -111,3 +111,33 @@ und danach wird var1 um 1 erhoeht.
 
 Sie koennen die Datei schleifen.py ausführen indem sie rechtsklicken -> Run schleifen.py
 Rechtsklicken sie auf tests.py -> Run "Unitests in tests.py"
+
+Tutorial 5 - Flusskontrolle
+Bis jetzt sind alle unsere Programme von anfang bis ende Befehl nach Befehl
+durch gelaufen. In der realitaet ist es aber so das manche Befehle nur unter
+bestimmten umstaenden ausgefuehrt werden sollen. Dafuer gibt es die if - else anweisungen:
+if bedingung:
+    Befehle
+andere Befehle
+Die eingerueckten Befehle befinden sich in der if Anweisung und werden nur ausgefuehrt wenn bedingung wahr ist.
+Beispiel:
+var1 = 3
+if var1 < 4:
+    print("var1 ist kleiner als 4")
+entweder oder Konstruckte koennen mit elif gebildet werden
+
+var1 = 3
+if var1 == 1:
+    print("var1 ist 1")
+elif var1 == 2:
+    print("var1 ist 2")
+else:
+    print("var1 ist weder 1 noch 2")
+die else Anweisung wird nur ausgefuehrt wenn keine der if Anweisungen zutrifft.
+
+- erstellen sie im src ordner die datei flusskontrolle.py
+- erstellen sie eine liste mein_liste und fuellen sie die liste mit einer Schleife mit den Werten 1 bis 100
+- erstellen sie die variablen var1 = 0 und var2 = 0
+- druchlaufen sie mit einer Schleife meine_liste, wenn der Wert aus meine_liste gerade ist i % 2 == 0 addieren sie den Wert
+    auf var1 sonst auf var2
+
