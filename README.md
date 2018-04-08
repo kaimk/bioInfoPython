@@ -72,3 +72,42 @@ mein_dict["eins"] gibt den Wert 1 zurück
 mit print(meine_liste) und print(mein_dict) ausgeben)
 Sie koennen die Datei lists.py ausführen indem sie rechtsklicken -> Run lists.py
 Rechtsklicken sie auf tests.py -> Run "Unitests in tests.py"
+
+Tutorial 4 - Schleifen
+Hat man eine Liste mit 1000 Werten ist es natuerlich sehr muehsam
+auf alle per Hand zu zugreifen. Um Listen zu "durchlaufen" gibt es
+Schleifen. Python unterstuetzt sowohl for Schleifen als auch while Schleifen.
+Der Syntax fuer for schleifen ist:
+for variable in ...:
+    mach etwas mit variable
+dabei muss alles was in der Schleife wiederholt werden soll eingerueckt sein
+Beispiel
+for i in range(0, 3):
+    print(i)
+print("hallo")
+
+Das Beispiel gibt die Zahlen 0, 1, 2, 3 aus
+hallo wird nur einmal ausgegeben weil es wegen der einrueckung nicht mehr zur Schleife gehoert.
+In einer Schleife kann man auch Listen füllen:
+meine_liste = []
+for i in range(0, 3):
+    meine_liste.append(i)
+print(meine_liste)
+gibt: [0,1,2,3]
+
+while Schleifen laufen solange eine Bedingung wahr ist:
+var1 = 1
+while var1 <= 5:
+    print(var1)
+    var1 = var1 + 1
+solange die variable var1 kleiner oder gleich 5 ist wird der inhalt der Variable ausgegeben
+und danach wird var1 um 1 erhoeht.
+
+- erstellen sie im ordner src eine datei schleifen.py
+- erstellen sie eine leere Liste meine_liste
+- fuellen sie meine_liste in einer for Schleife mit den Werten 1 bis 100
+- erstellen sie eine variable var1 = 1
+- solange var1 kleiner oder gleich 20 ist erhoehen sie var1 um den Wert von var1 (var1 = var1 + var1)
+
+Sie koennen die Datei schleifen.py ausführen indem sie rechtsklicken -> Run schleifen.py
+Rechtsklicken sie auf tests.py -> Run "Unitests in tests.py"

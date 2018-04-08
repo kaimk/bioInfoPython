@@ -2,6 +2,7 @@ import unittest
 import sys
 from src import variablen
 from src import lists
+from src import schleifen
 
 class SetupTest(unittest.TestCase):
 	def testEnviroment(self):
@@ -46,6 +47,14 @@ class ListsTest(unittest.TestCase):
 
     def testVar2(self):
         assert lists.var2 == lists.mein_dict["b"]
+
+class LoopTest(unittest.TestCase):
+    def testListe(self):
+        for i in range(1, 100):
+            assert schleifen.meine_liste[i-1] == i
+
+    def testVar1(self):
+        assert schleifen.var1 == 32
 
 if __name__ == "__main__":
 	unittest.main()
